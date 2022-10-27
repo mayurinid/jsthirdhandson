@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSTHIRDHANDSON</title>
+</head>
+<body>
+    <pre>
+   Question 1.Find the number of digits 
+   Answer 1. 
+   const Find_Digits = (N) => 
+   {
+       let count = 0;
+   
+     while (N > 0) {
+       N = Math.floor(N / 10);
+       count++;
+     }
+   
+     return count;
+   };
+Question 2. Find the Fives.
+Answer 2.
+const Find_Five = (N) => 
+{
+
+        let count = 0;
+        while (N > 0)
+        {
+            if (N % 10 == 5)
+                count++;
+ 
+            N = parseInt(N / 10, 10);
+        }
+        return count;
+};
+
+Question 3.Find the sum of the digits of a given number.
+Answer 3. 
+const Number_Sum = (N) => {
+ var rem, sum=0;
+  while(N>0)
+  {
+    rem =N%10;
+    sum = sum+rem;
+    N = Math.floor(N/10);
+  }
+  return sum;
+  };
+
+  Question 4. Find the sum of the digits of a given number.
+  Answer 4. 
+  const Number_Sum = (N) => {
+   var rem, sum=0;
+    while(N>0)
+    {
+      rem =N%10;
+      sum = sum+rem;
+      N = Math.floor(N/10);
+    }
+    return sum;
+    };
+  Question 5. Print the Odds.
+  Write a program which takes  a number from user and print all odd numbers in between 2 and N, but print 2 first.
+  Answer 5.
+  const Print_Odd = (N) => 
+  {
+  for ( var i = 2 ; i <= N ; i++ )
+  {
+    if ( i == 2 || i% 2 !==0 ){
+      console.log(i);
+      
+    }
+  }
+  };
+  
+Question 6.Print the Pattern.
+Write a program which ask user for no of lines and print a pattern using an asterik .
+Answer 6. 
+const Print_pattern = (N) => 
+{
+
+let string = "";
+for (let i = 1; i <= N; i++) {
+  for (let j = 0; j < i; j++) {
+    string += "*";
+  }
+  string += "\n";
+}
+console.log(string);
+};
+Question 7.Check whether a Number is a prime or not.
+Write a program which takes  a number from user and check whether number is prime number or not a prime number.
+Answer 7. const Prime_Check = (N) => 
+{	var  chk=0;
+for (let i=2; i<=N; i++)
+{
+  if(N % 2 ===0)
+  {
+     chk++;
+    break;
+  }
+}
+if(chk===0) 
+{
+	return "YES";
+}
+else
+{
+ return "NO";
+}
+};
+Question 8. Print Numbers
+You are given an integer 
+N , and your task is to print all the integers starting from 
+1  till N  (N  inclusive).
+Answer 8. 
+const printNumbers = (n) => {
+ let abc="";
+for(let i = 1;i <= n;i++){
+  abc=abc+i+"";  
+}
+console.log(abc);
+};
+Question 9. Print the Table
+Write a program which takes a number from user and print the table.
+Answer 9. const Print_Table = (N) => 
+{
+for(var i=1;i<=10;i++)
+{
+    console.log(N + " * " + i + " = " + i * N);
+}
+};
+
+
+
+ 
+  
+</pre>
+</body>
+</html>
